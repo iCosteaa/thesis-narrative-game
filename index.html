@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Diss Thesis Game</title>
+</head>
+<body>
+    <div id="pixelated-painter">
+        <div id="pixelated-head">
+            <div class="afro-hair"></div>
+
+            <div class="ear left-ear"></div>
+            <div class="ear right-ear"></div>
+
+            <div class="pixelated-pixels"></div>
+        </div>
+
+        <div id="shirt"></div>
+    </div>
+
+
+    <button id="start-button" onclick="startGame()">Start Game</button>
+
+    <div id="name-input-page" hidden>
+        <h1>Welcome to the Painter Game</h1>
+        <p>Please enter your name:</p>
+
+        <form id="name-form" onsubmit="submitName(event)">
+            <input type="text" id="name" name="name" required>
+            <br>
+            <button class="submit-button" type="submit">Submit</button>
+        </form>
+
+        <p id="namePS">P.S.: You do not need to insert your real name here if you do not want to! Your name will be used only for the sake of the dialogue.</p>
+    </div>
+
+    <div id="dialogue-page" hidden>
+        <div id="story-container">
+            <p id="story-text"></p>
+            <img id="story-image" src="" hidden/>
+        </div>
+
+        <p id="choice-title" hidden></p>
+        <div id="choices-container">
+            <div id="choice-1-column" hidden></div>
+            <div id="choice-2-column" hidden></div>
+        </div>
+
+        <button id="next-button" onclick="nextStory()">
+            Next
+        </button>
+    </div>
+
+    <div id="feedback-page" hidden>
+        <iframe id="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLSfx2zsHIbXPvpKbYVJc6W-4DIP4sNDxyMoOwPw5B6Rc9bQ5EA/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
