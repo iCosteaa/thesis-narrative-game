@@ -1,0 +1,195 @@
+@media screen and (max-width: 600px) {
+    p, button {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Set your desired background color */
+}
+
+#pixelated-painter {
+    position: relative;
+}
+
+#pixelated-head {
+    width: 100px;
+    height: 100px;
+    background-color: #ffe0bd; /* Light-skin color */
+    position: relative;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+
+.afro-hair {
+    position: absolute;
+    top: -50px;
+    left: -25px;
+    width: 150px;
+    height: 150px;
+    background-color: #ff8c00; 
+    border-radius: 50%;
+    z-index: -1;
+}
+
+
+.ear {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #ffe0bd; 
+    border-radius: 50%;
+}
+
+.left-ear { top: 35px; left: -20px; }
+.right-ear { top: 35px; left: 90px; }
+
+
+.pixelated-pixels:before,
+.pixelated-pixels:after,
+.pixelated-pixels span {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #6E260E; 
+}
+
+.pixelated-pixels:before { top: 30px; left: 25px; }
+.pixelated-pixels:after { top: 30px; left: 60px; }
+.pixelated-pixels span { top: 20px; left: 30px; }
+
+
+#shirt {
+    width: 100px;
+    height: 120px;
+    background-color: #87CEEB; 
+    position: absolute;
+    top: 80px; 
+    z-index: -2;
+}
+
+#namePS {
+    margin-top: 4%;
+    font-size: 15px;
+    color: rgb(89, 89, 89);
+}
+
+#start-button {
+    margin-top: -300px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#start-button:hover {
+    background-color: #45a049; 
+}
+
+#story-container {
+    text-align: center;
+}
+
+#story-text {
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 700px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+}
+
+#story-image {
+    max-width: 35%;
+    border: 1pt solid black;
+
+}
+
+#name-input-page, #dialogue-page {
+    text-align: center;
+}
+
+input {
+    height: 20px;
+    margin-bottom: 15px;
+}
+
+#next-button, .submit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#next-button:hover, .submit-button:hover {
+    background-color: #45a049;
+}
+
+#next-button:disabled, .submit-button:disabled {
+    background-color: #cccccc;
+}
+
+#choices-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    max-width: 700px;
+    margin-bottom: 20px;
+}
+
+#choice-title {
+    text-align: center;
+    max-width: 700px;
+}
+
+#choice-1-column, #choice-2-column {
+    height: 100%;
+    align-items: center;
+    padding: 10px;
+}
+
+#choice1, #choice2 {
+    height: 100%;
+    width: 100%;
+    border: 4px outset;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: Liberation Serif !important;
+    font-size: 16px;
+}
+
+#feedback-page {
+    max-width: 700px;
+    max-height: 600px;
+    margin: 0;
+    padding: 0;
+}
+
+iframe {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    box-sizing: border-box;
+}
